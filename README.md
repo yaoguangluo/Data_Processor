@@ -6,6 +6,8 @@
 小伙伴可以看下这个排序算法，哥前几年反复思考了一段时间基于快排5创立了这个算法，速度非常的飘。在线性排序里面性能不知道是不是世界第二。
 https://github.com/yaoguangluo/Data_Processor/blob/master/sortProcessor/Quick_6D_luoyaoguang_Sort.java
 
+正在做这个Quick_6D_luoyaoguang_Sort版本的非线性table排序。
+
 
 作者 罗瑶光
 2018、10、05
