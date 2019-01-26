@@ -1,0 +1,11 @@
+group 'Data_Processor'
+version '1.0-SNAPSHOT'
+apply plugin: 'java'
+sourceCompatibility = 1.8
+
+dependencies {
+    compile 'commons-dbcp:commons-dbcp:1.4'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.2.4'
+    compile group: 'org.json', name: 'json', version: '20160810'
+    // https://mvnrepository.com/artifact/cpdetector/cpdetector
+}

@@ -1,14 +1,12 @@
 package movieProcessor;
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
-import org.apache.commons.math.complex.Complex;
 import soundProcessor.BytestoAIS;
 public class AdataFrame{
 	public int seconds;
 	public AudioInputStream audioIS;
 	public byte[] audioBytes;
 	public double[] audioArray;
-	public Complex[][] audiofft;
 	public AdataFrame next;
 	public AdataFrame prev;
 	public double[] master;

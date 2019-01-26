@@ -12,7 +12,7 @@ import javax.sound.sampled.AudioInputStream;
 
 
 import movieProcessor.LYGFileIO;
-public class SoundWaveVector implements Runnable{
+public class SoundWaveVector{
 	Vector<Double> lines= new Vector<Double>();
 	public byte[] audioBytes;
 	public double[] audioData = null;
@@ -401,11 +401,5 @@ public class SoundWaveVector implements Runnable{
 		}
 		return lines;
 
-	}
-
-	@Override
-	public void run() {
-		// TODO Auto-generated method stub
-
-	}        
+	}      
 }
