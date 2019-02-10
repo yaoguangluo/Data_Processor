@@ -77,12 +77,10 @@ public class Quantification{
 			}
 			pre=next;
 		}
-		// TODO Auto-generated method stub
 		return output;
 	}
 
 	public double[] liangHuaXiHuaHalfSide(double[] input) {
-		// TODO Auto-generated method stub
 		double[] output = new double[input.length];
 		for(int i=1;i<input.length-1;i++)
 		{

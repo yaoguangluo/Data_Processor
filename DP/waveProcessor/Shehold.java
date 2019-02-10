@@ -1,6 +1,6 @@
 package waveProcessor;
 public class Shehold{
-	public double[] shehold1(double[] input, double scale) {
+	public double[] shehold(double[] input, double scale) {
 		double [] output= new double [input.length];
 		for(int i=0;i<input.length;i++) {
 			if(input[i]>scale) {

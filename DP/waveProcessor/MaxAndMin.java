@@ -9,7 +9,7 @@ public class MaxAndMin{
 		}
 		return max;
 	};
-	
+
 	public double max_i(double[] input) {
 		double max = 0;
 		for(int i=0;i<input.length;i++) {
@@ -19,7 +19,7 @@ public class MaxAndMin{
 		}
 		return max;
 	};
-	
+
 	@SuppressWarnings("unused")
 	public double min_v(double[] input,double rank) {
 		double min = 999999999;
@@ -31,7 +31,7 @@ public class MaxAndMin{
 		}
 		return min;
 	};
-	
+
 	public double min_i(double[] input, double rank) {
 		double min = 999999999;
 		for(int i=0; i<input.length; i++) {

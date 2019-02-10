@@ -62,6 +62,4 @@ public class Proportion{
 		}
 		return output;
 	};
-
-
 }
