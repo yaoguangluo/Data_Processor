@@ -3,24 +3,24 @@
 https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick_6D_luoyaoguang_Sort.java
 
 正在做这个Quick_6D_luoyaoguang_Sort版本的非线性table排序。
-##### 已拥有算法： 广义傅里叶算法
-##### 已拥有算法： 广义快速傅里叶算法
-##### 已拥有算法： 广义拉普拉斯算法
-##### 已拥有算法： 广义霍尔算法
-##### 已拥有算法： 带算子高斯算法
-##### 已拥有算法： emboss算法
-##### 已拥有算法： 2分算法
-##### 已拥有算法： 腐蚀算法
-##### 已拥有算法： 膨胀算法
-##### 已拥有算法： 拉伸算法
-##### 已拥有算法： 细粒度边缘算法
-##### 已拥有算法： 索贝尔面算法
-##### 已拥有算法： 索贝尔边缘算法
-##### 已拥有算法： 均值算法
-##### 已拥有算法： 采样算法
-##### 已拥有算法： 堆算法
-##### 已拥有算法： 快排1,2,3,4,5,6+罗瑶光小高峰修正过滤算法。
-##### 已拥有算法： 2叉， 三叉，4叉，8叉，树算法与搜索。
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 广义傅里叶算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 广义快速傅里叶算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 广义拉普拉斯算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 广义霍尔算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 带算子高斯算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： emboss算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 2分算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 腐蚀算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 膨胀算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 拉伸算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 细粒度边缘算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 索贝尔面算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 索贝尔边缘算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 均值算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 采样算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 堆算法
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 快排1,2,3,4,5,6+罗瑶光小高峰修正过滤算法。
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 2叉， 三叉，4叉，8叉，树算法与搜索。
 ##### 已拥有算法： 等。。。
 
 #### 图形处理项目实例
