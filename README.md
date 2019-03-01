@@ -3,6 +3,7 @@
 https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick_6D_luoyaoguang_Sort.java
 
 正在做这个Quick_6D_luoyaoguang_Sort版本的非线性table排序。
+##### ![实例](http://progressed.io/bar/20)正在研发算法：离散余弦棱角区像素隐写算法。
 ##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 广义傅里叶算法
 ##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 广义快速傅里叶算法
 ##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 广义拉普拉斯算法
