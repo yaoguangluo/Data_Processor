@@ -32,16 +32,21 @@ public class PixFloat{
 
 	public String LinerToLineCode(int[] pix) {
 		StringBuilder code = new StringBuilder();
-		for(int i = 0; i < pix.length; i++){
-			String register = String.valueOf(pix[i]);
-			code.append("" + register.charAt(0));
-			if(register.length()>1) {
-				code.append("" + register.charAt(1));
+		Here:
+			for(int i = 0; i < pix.length; i++){
+				String register = String.valueOf(pix[i]);
+				if(register.length()==3) {
+					code.append("" + register);
+					continue Here;
+				}
+				if(register.length()==2) {
+					code.append("0" + register);
+					continue Here;
+				}
+				if(register.length()==1) {
+					code.append("00" + register);
+				}
 			}
-			if(register.length()>2) {
-				code.append("" + register.charAt(2));
-			}
-		}
 		return code.toString();
 	}
 }
