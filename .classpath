@@ -3,5 +3,11 @@
 	<classpathentry kind="src" path="DP"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="/DETA_FREE1.0.3裁剪免费版本/lib/javacv-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-server/9.4.2.v20170220/66d529dcf0bc861c45873f0b3ce02fb63c06ae3f/websocket-server-9.4.2.v20170220.jar" sourcepath="C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-server/9.4.2.v20170220/41e075734ba82b0cdc97ad29b5af40ffdedad5ec/websocket-server-9.4.2.v20170220-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>

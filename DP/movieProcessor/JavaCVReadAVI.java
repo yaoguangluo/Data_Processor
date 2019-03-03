@@ -1,4 +1,4 @@
-package javacv;
+package movieProcessor;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -11,17 +11,18 @@ import org.bytedeco.javacv.FFmpegFrameGrabber;
 import org.bytedeco.javacv.Frame;
 import org.bytedeco.javacv.Java2DFrameConverter;
 import org.bytedeco.javacv.FrameGrabber.Exception;
+@SuppressWarnings("serial")
 public class JavaCVReadAVI extends JPanel{
 	public void run() throws Exception, InterruptedException {
 		FFmpegFrameGrabber ffmpegFrameGrabber = FFmpegFrameGrabber.createDefault("C:/Users/Administrator/Desktop/deta/detasource/videoProcess/webwxgetvideo.avi");
 		ffmpegFrameGrabber.start();
-		int fflength = ffmpegFrameGrabber.getLengthInFrames();
-		int maxStamp = (int) (ffmpegFrameGrabber.getLengthInTime()/1000000);
-		int count = 0;
+//		int fflength = ffmpegFrameGrabber.getLengthInFrames();
+//		int maxStamp = (int) (ffmpegFrameGrabber.getLengthInTime()/1000000);
+//		int count = 0;
 		while (true) {
 			Frame nowFrame = ffmpegFrameGrabber.grabImage();
-			int startStamp = (int) (ffmpegFrameGrabber.getTimestamp() * 1.0/1000000);
-			double present = (startStamp * 1.0 / maxStamp) * 100;
+//			int startStamp = (int) (ffmpegFrameGrabber.getTimestamp() * 1.0/1000000);
+//			double present = (startStamp * 1.0 / maxStamp) * 100;
 			if (nowFrame == null) {
 				System.out.println("!!! Failed cvQueryFrame");
 				continue;
@@ -33,7 +34,7 @@ public class JavaCVReadAVI extends JPanel{
 		}
 	}
 	public static void main(String[] argv) throws Exception, InterruptedException{
-		Simple t = new Simple();
+		JavaCVReadAVI t = new JavaCVReadAVI();
 		t.setVisible(true);
 		t.setPreferredSize(new Dimension(800,300));
 		JFrame fr = new JFrame();
