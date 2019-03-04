@@ -20,7 +20,7 @@ public class LayerWiseRelevencePropagation{
 				}
 			}
 		}
-		return input;
+		return output;
 	}
 
 	public int[][] backwardPassMask(int [][]input, int range, int scale){
@@ -36,6 +36,6 @@ public class LayerWiseRelevencePropagation{
 				}
 			}
 		}
-		return input;
+		return output;
 	}
 }
