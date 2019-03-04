@@ -30,7 +30,7 @@ public class PixFloat{
 		return output;
 	}
 
-	public String LinerToLineCode(int[] pix) {
+	public String linerToLineCode(int[] pix) {
 		StringBuilder code = new StringBuilder();
 		Here:
 			for(int i = 0; i < pix.length; i++){
@@ -48,5 +48,19 @@ public class PixFloat{
 				}
 			}
 		return code.toString();
+	}
+	/*
+	 * Section Implementation:
+	 * Method: StanLong refer https://www.cnblogs.com/StanLong/p/6906814.html
+	 * Development: Yaoguang.Luo
+	 * Notes: Without test.
+	 * */
+	public String lineCodetoBits(String lineCode) {
+		StringBuilder bits = new StringBuilder();
+	    char[] lineCodeChars = lineCode.toCharArray();
+	    for(int i = 0; i < lineCodeChars.length; i++){
+	    	bits.append(Integer.toBinaryString(lineCodeChars[i]) + " ");
+	    }   
+		return bits.toString();	
 	}
 }
