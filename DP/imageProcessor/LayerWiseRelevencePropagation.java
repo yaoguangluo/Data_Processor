@@ -2,7 +2,7 @@ package imageProcessor;
 
 /*
  * Graph: Vincent Boucher refer https://www.linkedin.com/feed/hashtag/?keywords=%23PatternRecognition
- * Theroy Development: Yaoguang Luo
+ * Theory Development: Yaoguang Luo
  * For way one without test. ATTENSION PLEASE!!!!!!!!
  * */
 
