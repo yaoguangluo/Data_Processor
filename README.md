@@ -6,6 +6,7 @@ https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick
 正在做这个Quick_6D_luoyaoguang_Sort版本的非线性table排序。
 ##### ![实例](http://progressed.io/bar/3)正在研发算法：隐写术基础研发包设计中
 ##### ![实例](http://progressed.io/bar/20)正在研发算法：离散余弦棱角区像素隐写算法。
+##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 3种基于罗瑶光小高峰平滑高峰过滤快排思想算法实现。
 ##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 分层关联传播（未测试版本）
 ##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 广义傅里叶算法（已测试版本）
 ##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 广义快速傅里叶算法（已测试版本）
