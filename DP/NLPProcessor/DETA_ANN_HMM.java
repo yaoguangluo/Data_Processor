@@ -1,6 +1,6 @@
 package NLPProcessor;
 import java.io.IOException;
-public class DETA_DNN_HMM {
+public class DETA_ANN_HMM {
 	public String[][] summingProcessor(String[][] inputNLP) throws IOException, InstantiationException, IllegalAccessException {
 		String[][] outNLP = inputNLP.clone(); 
 		for(int i = 7; i < inputNLP[0].length; i++) {
