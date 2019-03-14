@@ -130,8 +130,6 @@ public class Guassian {
 				g[i-d/2][j-e/2]=(int)(sum);	
 			}
 		}  		
-
-
 		return  new CheckRange().Processor(g);	  
 	}
 
@@ -142,13 +140,10 @@ public class Guassian {
 		//g[][]
 		//b[][]
 		//r[][]g[][]b[][] to image
-
-
 		//image to r[][] g[][] b[][]
 		int r[][]=new ReadWritePng().REDpngRead(lygimage);
 		int g[][]=new ReadWritePng().GRNpngRead(lygimage);
 		int b[][]=new ReadWritePng().BLUpngRead(lygimage);
-
 		//r[][]
 		r=Processor2D(r,(int)d,(int)e,k);   
 		//g[][]
@@ -157,10 +152,6 @@ public class Guassian {
 		b=Processor2D(b,(int)d,(int)e,k);  
 		//r[][]g[][]b[][] to image
 		lygimage=new ReadWritePng().createBufferImage(r,g,b);
-
-
-
-
 		return lygimage;
 	}
 
