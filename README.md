@@ -1,4 +1,4 @@
-# Data_Processor
+# 🐎 Widly algorithms collection API about data operation for java. /一个数据分析和数据结构常用算法包，包括每秒排序2.6亿对象的快排6小高峰修正算法。
 一个全面的用于处理运算，排序，搜索，视觉，语音，线性波形，影视，深度学习，人工智能等算法处理包,德塔将基本算法书的思想和笔记通过java程序实现，通过一些工程的应用，逐渐将这些功能提取出来反复的优化，于是这个插件包项目设立了。
 
 https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick_6D_luoyaoguang_Sort.java
