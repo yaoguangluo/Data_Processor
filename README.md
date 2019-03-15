@@ -32,5 +32,17 @@ https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick
 
 #### 语音处理项目实例
 ![实例](https://github.com/yaoguangluo/Data_Processor/blob/master/mu.png)
+
+#### 第三方引用协作感谢：
+1. 如下java文件为renhat教授提供给我的，表示感谢.
+https://github.com/yaoguangluo/Data_Processor/blob/master/DP/imageProcessor/Reflection.java
+
+2. 如下java文件为2011年我在网上谷歌搜索的源码并进行功能修改，表示感谢。不知道开源作者是谁，就先感谢下谷歌.
+https://github.com/yaoguangluo/Data_Processor/blob/master/DP/imageProcessor/ConvexHull.java
+
+3. 快排1-4的算法来自《算法导论》思想。在这里表示感谢.
+
+4. 涉及的相关开源包： JMF, JAVA CV, GLEEN 3D.
+
 作者 罗瑶光
 20190305
