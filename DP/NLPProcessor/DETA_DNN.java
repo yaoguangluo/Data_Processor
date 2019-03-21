@@ -11,11 +11,7 @@ public class DETA_DNN {
 			dnn[i][0] = rnn[i][0];
 			double important = 0;
 			for(int j = 0; j < rnn.length; j++) {
-				try {
-					important += Double.parseDouble(rnn[j][2]);
-				}catch(Exception e) {
-					System.out.println(rnn[j][2]);
-				}
+				important += Double.parseDouble(rnn[j][2]);
 			}
 			dnn[i][1] = "" + Math.sqrt(important * Double.parseDouble(rnn[i][1]));
 		}

@@ -1,4 +1,4 @@
-# Data_Processor
+# 🐎 Widly algorithms collection API about data operation for java. /一个数据分析和数据结构常用算法包，包括每秒排序2.6亿对象的快排6小高峰修正算法。
 一个全面的用于处理运算，排序，搜索，视觉，语音，线性波形，影视，深度学习，人工智能等算法处理包,德塔将基本算法书的思想和笔记通过java程序实现，通过一些工程的应用，逐渐将这些功能提取出来反复的优化，于是这个插件包项目设立了。
 
 https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick_6D_luoyaoguang_Sort.java
@@ -29,5 +29,20 @@ https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick
 
 #### 图形处理项目实例
 ![实例](https://github.com/yaoguangluo/Data_Processor/blob/master/2019021301.png)
+
+#### 语音处理项目实例
+![实例](https://github.com/yaoguangluo/Data_Processor/blob/master/mu.png)
+
+#### 第三方引用协作感谢：
+1. 如下java文件为renhat教授提供给我的，表示感谢.
+https://github.com/yaoguangluo/Data_Processor/blob/master/DP/imageProcessor/Reflection.java
+
+2. 如下java文件为2011年我在网上谷歌搜索的源码并进行功能修改，表示感谢。不知道开源作者是谁，就先感谢下谷歌.
+https://github.com/yaoguangluo/Data_Processor/blob/master/DP/imageProcessor/ConvexHull.java
+
+3. 快排1-4的算法来自《算法导论》思想。在这里表示感谢.
+
+4. 涉及的相关开源包： JMF, JAVA CV, GLEEN 3D.
+
 作者 罗瑶光
 20190305
