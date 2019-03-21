@@ -1,5 +1,5 @@
 package matrixProcessor;
-public class CnnMeansure{
+public class CnnMeasure{
 	public double[][] getCnnMeansure(double inputs[][]){
 		double[][] output = new double[inputs.length][inputs[0].length];
 		double[] Kernel= new double[inputs[0].length];
