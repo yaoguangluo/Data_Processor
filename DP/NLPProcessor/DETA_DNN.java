@@ -1,7 +1,8 @@
 package NLPProcessor;
 import java.io.IOException;
 public class DETA_DNN {
-	public String[][] summingProcessor(String[][] ann, String[][] rnn) throws IOException, InstantiationException, IllegalAccessException {
+	public String[][] summingProcessor(String[][] ann, String[][] rnn) throws IOException
+	, InstantiationException, IllegalAccessException {
 		//SUM OF LWA DNN 
 		//1 DNN AOP OF DNN
 		//IDE= "«◊√‹£¨¿Î…¢£¨Œª÷√"
@@ -11,20 +12,18 @@ public class DETA_DNN {
 			double important = 0;
 			for(int j = 0; j < rnn.length; j++) {
 				try {
-					important +=  Double.parseDouble(rnn[i][1])* Double.parseDouble(rnn[j][2]);
+					important += Double.parseDouble(rnn[j][2]);
 				}catch(Exception e) {
-					System.out.println(rnn[i][1]);
 					System.out.println(rnn[j][2]);
 				}
-				
 			}
-			dnn[i][1] = "" + Math.sqrt(important);
+			dnn[i][1] = "" + Math.sqrt(important * Double.parseDouble(rnn[i][1]));
 		}
-		//2 DNN CORRLATION LWA
+		//2 DNN CORRELATION LWA
 		for(int i = 0; i < rnn.length; i++) {
 			double correlation = 0;
 			double sumOfPow = 0;
-			for(int j = 0; j<rnn.length; j++) {
+			for(int j = 0; j < rnn.length; j++) {
 				sumOfPow += Math.abs(Double.parseDouble(rnn[i][3]) - Double.parseDouble(rnn[j][3]));
 			}
 			sumOfPow /= rnn.length;
