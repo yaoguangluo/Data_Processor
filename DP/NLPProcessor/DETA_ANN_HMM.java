@@ -9,7 +9,7 @@ public class DETA_ANN_HMM {
 				for(int k = 0;k < inputNLP.length; k++) {
 					sum += Double.valueOf(inputNLP[k][i]);
 				}
-				System.out.println(sum);
+				//System.out.println(sum);
 				outNLP[j][i] = "" + Double.valueOf(inputNLP[j][i])/sum;
 			}
 		}
