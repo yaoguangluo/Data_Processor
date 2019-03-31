@@ -4,7 +4,7 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 public class DNA{
 	public int positive= 1;
 	public int normal= 0;
-	public int negativetive= -1;
+	public int negative= -1;
 	public ConcurrentLinkedDeque<String> functionLineDeque;
 	public ConcurrentLinkedDeque<String> maskLineDeque;
 	public ConcurrentHashMap<Integer, String> functionLineMap;
