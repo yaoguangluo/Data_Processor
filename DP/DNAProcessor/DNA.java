@@ -2,11 +2,8 @@ package DNAProcessor;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedDeque;
 public class DNA{
-	public int positive= 1;
-	public int normal= 0;
-	public int negative= -1;
-	public ConcurrentLinkedDeque<String> functionLineDeque;
-	public ConcurrentLinkedDeque<String> maskLineDeque;
-	public ConcurrentHashMap<Integer, String> functionLineMap;
-	public ConcurrentHashMap<Integer, String> maskLineMap;
+	public ConcurrentLinkedDeque<PDN> functionLineDeque;
+	public ConcurrentLinkedDeque<PDN> maskLineDeque;
+	public ConcurrentHashMap<Integer, PDN> functionLineMap;
+	public ConcurrentHashMap<Integer, PDN> maskLineMap;
 }
