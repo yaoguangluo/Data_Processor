@@ -20,9 +20,12 @@ public class DETA_DNN {
 			double correlation = 0;
 			double sumOfPow = 0;
 			for(int j = 0; j < rnn.length; j++) {
-				sumOfPow += Math.abs(Double.parseDouble(rnn[i][3]) - Double.parseDouble(rnn[j][3]));
+				sumOfPow +=  Double.parseDouble(rnn[j][3]);
+			//1	sumOfPow += Math.abs(Double.parseDouble(rnn[i][3]) - Double.parseDouble(rnn[j][3]));
 			}
-			sumOfPow /= rnn.length;
+		//2	sumOfPow = Math.abs(Double.parseDouble(rnn[i][3]) * (double)rnn.length - sumOfPow);
+		//1	sumOfPow /= rnn.length;
+			sumOfPow = Math.abs(Double.parseDouble(rnn[i][3]) - sumOfPow/rnn.length);//3
 			correlation =  Double.parseDouble(dnn[i][1]) * sumOfPow;
 			dnn[i][2] = "" + Math.sqrt(correlation);
 		}
