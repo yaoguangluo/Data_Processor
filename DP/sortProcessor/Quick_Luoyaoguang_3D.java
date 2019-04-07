@@ -2,8 +2,11 @@ package sortProcessor;
 
 import timeProcessor.TimeCheck;
 
-//ç¬¬äºŒä»£ç½—ç‘¶å…‰å°é«˜å³°å¹³å‡é«˜å³°è¿‡æ»¤å¿«æŽ’æ€æƒ³è®¾è®¡ä¸­ã€‚å°é«˜å³°é«˜å³°è¿‡æ»¤å¿«é€ŸæŽ’åº
-public class Quick_6D_luoyaoguang_Sort{
+//µÚÈý´úÂÞÑþ¹âÐ¡¸ß·åÆ½¾ù¸ß·å¹ýÂË¿ìÅÅË¼ÏëÉè¼ÆÖÐ¡£Ð¡¸ß·å¸ß·å¹ýÂË¿ìËÙÅÅÐò
+//Í¬Æµº¯Êý¼õÉÙ
+//Í¬ÆµËã×Ó¼õÉÙ
+//Í¬Æµ±äÁ¿¼õÉÙ
+public class Quick_Luoyaoguang_3D{
 	public int[] sort(int[] a) {
 		TimeCheck imeCheck= new TimeCheck();
 		imeCheck.begin();
@@ -33,20 +36,17 @@ public class Quick_6D_luoyaoguang_Sort{
 	}
 
 	private int partition(int[] a, int lp, int rp) {
-		int x=a[lp];int lp1=lp;
-		if(x>=a[rp]){
-			x=a[rp];
-		}
+		int x=a[lp]>=a[rp]?a[lp]:a[rp];
+		int lp1=lp;
 		while(lp1<rp){
-			while(a[lp1]<=x &&lp1<rp ) {
+			while(a[lp1]<=x&& lp1<rp) {
 				lp1++;
 			}
 			while(a[rp]>x){
 				rp--;
 			}
 			if(lp1<rp){
-				int temp=a[rp];
-				a[rp]=a[lp1];a[lp1]=temp;
+				int temp=a[rp];a[rp]=a[lp1];a[lp1]=temp;
 			}
 		}
 		a[lp]=a[rp];a[rp]=x;
