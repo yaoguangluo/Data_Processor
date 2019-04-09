@@ -8,5 +8,5 @@ public class PDN{
 		this.pdn = pdn;
 	}
 
-	public boolean[] pdn;
+	private boolean[] pdn;
 }
