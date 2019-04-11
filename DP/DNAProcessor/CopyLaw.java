@@ -66,4 +66,13 @@ public class CopyLaw{
 		}
 		return output;
 	}
+
+	public DNA mutationCopy(DNA dna) {
+		DNA newDna= new DNA();
+		newDna.maskLineDeque= copy(dna.getMaskLineDeque());
+		newDna.functionLineDeque= mask(newDna.maskLineDeque, dna.getFunctionLineDeque(), dna.getMaskLineDeque());
+		newDna.functionLineMap= copyMap(newDna.maskLineDeque);
+		newDna.maskLineMap= copyMap(newDna.functionLineDeque);
+		return newDna;	
+	}
 }
