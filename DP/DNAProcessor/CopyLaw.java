@@ -14,7 +14,7 @@ public class CopyLaw{
 		return newDna;	
 	}
 
-	private ConcurrentHashMap<Integer, PDN> copyMap(ConcurrentLinkedDeque<PDN> functionLineDeque) {
+	public ConcurrentHashMap<Integer, PDN> copyMap(ConcurrentLinkedDeque<PDN> functionLineDeque) {
 		ConcurrentHashMap<Integer, PDN> output= new ConcurrentHashMap<>();
 		Iterator<PDN> iterator= functionLineDeque.iterator();
 		int count= 0;
@@ -32,7 +32,7 @@ public class CopyLaw{
 		return output;
 	}
 	
-	private ConcurrentLinkedDeque<PDN> mask(ConcurrentLinkedDeque<PDN> originDeque
+	public ConcurrentLinkedDeque<PDN> mask(ConcurrentLinkedDeque<PDN> originDeque
 			, ConcurrentLinkedDeque<PDN> newDeque, ConcurrentLinkedDeque<PDN> maskOutput) {
 		Iterator<PDN> iteratorOriginDeque= originDeque.iterator();
 		Iterator<PDN> iteratorNewDeque= newDeque.iterator();
@@ -50,7 +50,7 @@ public class CopyLaw{
 		return maskOutput;
 	}
 
-	private ConcurrentLinkedDeque<PDN> copy(ConcurrentLinkedDeque<PDN> maskLineDeque) {
+	public ConcurrentLinkedDeque<PDN> copy(ConcurrentLinkedDeque<PDN> maskLineDeque) {
 		ConcurrentLinkedDeque<PDN> output= new ConcurrentLinkedDeque<>();
 		Iterator<PDN> iterator= maskLineDeque.iterator();
 		while(iterator.hasNext()) {
