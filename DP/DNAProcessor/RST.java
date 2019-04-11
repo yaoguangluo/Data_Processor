@@ -1,22 +1,21 @@
 package DNAProcessor;
-import java.util.concurrent.ConcurrentLinkedDeque;
 public class RST{
-	public ConcurrentLinkedDeque<DNA> getFatherDeque() {
+	public DNA getFatherDeque() {
 		return fatherDeque;
 	}
 	
-	public void setFatherDeque(ConcurrentLinkedDeque<DNA> fatherDeque) {
+	public void setFatherDeque(DNA fatherDeque) {
 		this.fatherDeque= fatherDeque;
 	}
 	
-	public ConcurrentLinkedDeque<DNA> getMotherDeque() {
+	public DNA getMotherDeque() {
 		return motherDeque;
 	}
 	
-	public void setMotherDeque(ConcurrentLinkedDeque<DNA> motherDeque) {
+	public void setMotherDeque(DNA motherDeque) {
 		this.motherDeque= motherDeque;
 	}
 	
-	private ConcurrentLinkedDeque<DNA> fatherDeque;
-	private ConcurrentLinkedDeque<DNA> motherDeque;
+	private DNA fatherDeque;
+	private DNA motherDeque;
 }
