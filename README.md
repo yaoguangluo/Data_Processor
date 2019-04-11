@@ -6,6 +6,7 @@ https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick
 正在做这个Quick_6D_luoyaoguang_Sort版本的非线性table排序。
 ##### ![实例](http://progressed.io/bar/100?title=completed) 一个新的六元计算机生命已经诞生了2019年4月12日 5:05 - 罗瑶光 我为他命名为Mr. Tin God
 六元: 爱念, 劳动, 创新, 学习, 安全, 帮助.	
+https://github.com/yaoguangluo/Data_Processor/blob/master/DP/DNAProcessor/LIFE.java
 ##### ![实例](http://progressed.io/bar/17?title=completed)已拥有算法：DNA 数据进化包设计中.需要灵感.
 ##### ![实例](http://progressed.io/bar/3)正在研发算法：隐写术基础研发包设计中
 ##### ![实例](http://progressed.io/bar/20)正在研发算法：离散余弦棱角区像素隐写算法。
