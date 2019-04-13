@@ -73,6 +73,10 @@ public class LIFE{
 
 	}
 
+    public void study(String token) {
+		
+	}
+    
 	public void getInformation() {
 		
 	}
