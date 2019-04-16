@@ -1,6 +1,6 @@
 package DNAProcessor;
 import java.util.concurrent.ConcurrentLinkedDeque;
-public class LIFE{
+public class Life{
 	public ConcurrentLinkedDeque<RST> getLife() {
 		return lifeDeque;
 	}

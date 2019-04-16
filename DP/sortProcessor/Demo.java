@@ -80,7 +80,7 @@ public class Demo extends Thread{
 	   ///*
 	    //check.begin();
 	    array=new Quick_6D_luoyaoguang_Sort().sort(array);
-	   //array=new Quick_2D_Sort().sort(array);
+	   //array=new Quick_Luoyaoguang_3D().sort(array);
 	   //check.end();
 	   print(array);
 	    //*/
