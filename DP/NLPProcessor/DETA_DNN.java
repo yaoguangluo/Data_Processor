@@ -1,11 +1,13 @@
 package NLPProcessor;
 import java.io.IOException;
 public class DETA_DNN {
+//Theory:DNN
+//Algorithm Author Mr.Yaoguang Luo	
 	public String[][] summingProcessor(String[][] ann, String[][] rnn) throws IOException
 	, InstantiationException, IllegalAccessException {
 		//SUM OF LWA DNN 
 		//1 DNN AOP OF DNN
-		//IDE= "Ç×ÃÜ£¬ÀëÉ¢£¬Î»ÖÃ"
+		//IDE= "Ã‡Ã—ÃƒÃœÂ£Â¬Ã€Ã«Ã‰Â¢Â£Â¬ÃŽÂ»Ã–Ãƒ"
 		String[][] dnn = new String[rnn.length][4];
 		for(int i = 0; i < rnn.length; i++) {
 			dnn[i][0] = rnn[i][0];
