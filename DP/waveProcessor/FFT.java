@@ -8,9 +8,9 @@ public class FFT{
 			x[i] = new cp();
 			x[i].image=input[i];
 		}
-		cp[] y=fftk(x);
-		for(int i=0;i<input.length;i++) {
-			output[i]=Math.sqrt(y[i].real*y[i].real + y[i].image*y[i].image);
+		cp[] y= fftk(x);
+		for(int i= 0;i< input.length;i++) {
+			output[i]= Math.sqrt(y[i].real*y[i].real + y[i].image*y[i].image);
 		}
 		return output;
 	}

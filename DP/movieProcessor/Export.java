@@ -12,7 +12,7 @@
 //	@SuppressWarnings("rawtypes")
 //	private Vector          vectorWindows = new Vector ();
 //	public Export ( String strSourceUrl ) {
-//		super ( JMFI18N.getResource("jmstudio.export.title") );
+//		super ( JMFI18N.getResource("jmthisInterfacedio.export.title") );
 //		dlgExport = new ExportWizard ( this, strSourceUrl, null );
 //		dlgExport.addWindowListener ( this );
 //		dlgExport.setVisible ( true );

@@ -1,6 +1,6 @@
 package waveProcessor;
 public class DFT{
-	double Pi=3.1415926;
+	double Pi= 3.1415926;
 	public double [] ft(double input[]) {
 		double output[]=new double[input.length];	
 		double cos[][]=this.ft_cos(input.length);

@@ -33,6 +33,7 @@ public class JavaCVReadAVI extends JPanel{
 			Thread.sleep(25);
 		}
 	}
+	
 	public static void main(String[] argv) throws Exception, InterruptedException{
 		JavaCVReadAVI t = new JavaCVReadAVI();
 		t.setVisible(true);
@@ -44,6 +45,7 @@ public class JavaCVReadAVI extends JPanel{
 		fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		t.run();		
 	}
+	
 	@SuppressWarnings("unused")
 	public void paint(Image img2){
 		Graphics g = this.getGraphics();
