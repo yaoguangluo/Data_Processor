@@ -2,6 +2,7 @@ package imageProcessor;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+
 import javax.imageio.ImageIO;
 public class ReadWritePng {	
 	public int h;
@@ -24,7 +25,7 @@ public class ReadWritePng {
 	}
 
 	public int[][] GRNpngRead(String args) throws IOException {
-		BufferedImage image = ImageIO.read(new File(args));
+		BufferedImage image = ImageIO.read(new File(args)); 
 		// extract R, G, B values
 		h = image.getHeight();
 		w = image.getWidth();
