@@ -14,7 +14,6 @@ public class TokenUtil {
 		token.setmPassword(mPassword);
 		return token;
 	}
-
 	public static String getSecondMD5Password(String uPassword) throws Exception {
 		return StringUtil.EncoderByMd5("Author:Yaoguang Luo", uPassword, 8);
 	}

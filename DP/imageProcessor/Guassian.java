@@ -133,8 +133,7 @@ public class Guassian {
 		return  new CheckRange().Processor(g);	  
 	}
 
-	public BufferedImage Processor(BufferedImage lygimage, double d, double e,double k) throws IOException 
-	{
+	public BufferedImage Processor(BufferedImage lygimage, double d, double e,double k) throws IOException {
 		//image to r[][] g[][] b[][]
 		//r[][]
 		//g[][]
@@ -154,14 +153,4 @@ public class Guassian {
 		lygimage=new ReadWritePng().createBufferImage(r,g,b);
 		return lygimage;
 	}
-
-
-
-
-
-
-	
-	
-	
-	
 }

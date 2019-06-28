@@ -31,7 +31,6 @@ public class RegionGet {
 		scale=new_region.length-1;
 		//return new_region;	  
 	}
-
 	public void buildGraph(int[][] g,String output) throws IOException{
 		int[][]temp=new int[g.length][g[0].length];
 		for(int q=0;q<g.length;q++) {

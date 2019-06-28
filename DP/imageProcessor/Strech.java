@@ -36,7 +36,6 @@ public class Strech {
 		}
 		return  new CheckRange().Processor(out);   
 	}
-
 	public BufferedImage Processor(BufferedImage lygimage, double d, double e) throws IOException {
 		//image to r[][] g[][] b[][]
 		//r[][]

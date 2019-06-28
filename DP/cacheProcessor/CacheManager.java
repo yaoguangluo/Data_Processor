@@ -1,5 +1,7 @@
 package cacheProcessor;
 import java.util.*;
+//refer javadoc-api/org/springframework/cache/CacheManager.html 这是spring 早期的缓存函数进行了2次修改。
+//修改人 罗瑶光
 public class CacheManager {
 	@SuppressWarnings("rawtypes")
 	private static HashMap cacheMap = new HashMap();
@@ -7,7 +9,6 @@ public class CacheManager {
 	private CacheManager() {
 		super();
 	}
-
 	@SuppressWarnings("unchecked")
 	public synchronized static boolean setSimpleFlag(String key, long serverbegrundt) {
 		if (cacheMap.get(key) == null) {
@@ -17,22 +18,17 @@ public class CacheManager {
 			return false;
 		}
 	}
-
-
 	//private synchronized static Cache getCache(String key) {
 	private synchronized static Cache getCache(String key) {
 		return (Cache) cacheMap.get(key);
 	}
-
 	// private synchronized static boolean hasCache(String key) {
 	private synchronized static boolean hasCache(String key) {
 		return cacheMap.containsKey(key);
 	}
-
 	public synchronized static void clearAll() {
 		cacheMap.clear();
 	}
-
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public synchronized static void clearAll(String type) {
 		Iterator i = cacheMap.entrySet().iterator();
@@ -53,17 +49,14 @@ public class CacheManager {
 			ex.printStackTrace();
 		}
 	}
-
 	public synchronized static void clearOnly(String key) {
 		cacheMap.remove(key);
 	}
-
 	//public synchronized static void putCache(String key, Cache obj) {
 	@SuppressWarnings("unchecked")
 	public synchronized static void putCache(String key, Cache obj) {
 		cacheMap.put(key, obj);
 	}
-
 	public synchronized static Cache getCacheInfo(String key) {
 		if (hasCache(key)) {
 			Cache cache = getCache(key);
@@ -74,7 +67,6 @@ public class CacheManager {
 		} else
 			return null;
 	}
-
 	@SuppressWarnings("unchecked")
 	public static void putCacheInfo(String key, Cache obj, long dt, boolean expired) {
 		Cache cache = new Cache();
@@ -84,7 +76,6 @@ public class CacheManager {
 		cache.setExpired(expired);
 		cacheMap.put(key, cache);
 	}
-
 	@SuppressWarnings("unchecked")
 	public static void putCacheInfo(String key, Cache obj, long dt) {
 		Cache cache = new Cache();
@@ -94,7 +85,6 @@ public class CacheManager {
 		cache.setExpired(false);
 		cacheMap.put(key, cache);
 	}
-
 	public static boolean cacheExpired(Cache cache) {
 		if (null == cache) {
 			return false;
@@ -107,11 +97,9 @@ public class CacheManager {
 			return true;
 		}
 	}
-
 	public synchronized static int getCacheSize() {
 		return cacheMap.size();
 	}
-
 	@SuppressWarnings("rawtypes")
 	public static int getCacheSize(String type) {
 		int k = 0;
@@ -145,7 +133,6 @@ public class CacheManager {
 			return a;
 		}
 	}
-
 	@SuppressWarnings({ "rawtypes", "unchecked", "finally" })
 	public static ArrayList getCacheListkey(String type) {
 		ArrayList a = new ArrayList();

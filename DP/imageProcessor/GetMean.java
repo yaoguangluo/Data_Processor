@@ -22,6 +22,4 @@ public class GetMean {
 		meanValue = sum/( outDIR.length * outDIR[0].length );
 		return meanValue;
 	}
-
-
 }

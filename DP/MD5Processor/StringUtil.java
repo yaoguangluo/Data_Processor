@@ -10,7 +10,6 @@ public class StringUtil {
 		String result = Base64.getEncoder().encodeToString(input.getBytes("UTF-8"));
 		return result;
 	}
-
 	public static String decode(String str) throws UnsupportedEncodingException {
 		if(str.equalsIgnoreCase("undefined")) {
 			return str;
@@ -18,7 +17,6 @@ public class StringUtil {
 			return new String(Base64.getMimeDecoder().decode(str), "UTF-8");
 		}
 	}
-
 	public static String EncoderByMd5(String salt, String pwd, int enctimes) throws NoSuchAlgorithmException,
 	UnsupportedEncodingException {
 		String saltTemp = salt;
@@ -27,7 +25,6 @@ public class StringUtil {
 		}
 		return saltTemp;
 	}
-
 	public static String EncoderByMd5(String salt, String pwd) throws NoSuchAlgorithmException,
 	UnsupportedEncodingException {
 		MessageDigest md5 = MessageDigest.getInstance("MD5");

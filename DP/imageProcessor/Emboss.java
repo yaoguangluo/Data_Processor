@@ -11,12 +11,10 @@ public class Emboss {
 			//GROUP OPERATION
 			Gx= new GroupOperator().GO(gxk, refG, size);
 			for(int i=0;i<Gx.length;i++){
-				for(int j=0;j<Gx[0].length;j++)
-				{  
+				for(int j=0;j<Gx[0].length;j++){  
 					g[i][j]=(int) (Gx[i][j]/2+127);
 				}	  
 			}  
-
 			int out[][] = new int[g.length][g[0].length];
 			for (int i = 0; i < g.length; i++) {
 				for (int j = 0; j < g[0].length; j++) {

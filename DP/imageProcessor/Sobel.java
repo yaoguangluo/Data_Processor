@@ -21,7 +21,6 @@ public class Sobel {
 			default: return null;
 		}	      
 	}
-	
 	private int[][] mag(double[][] gx,double[][] gy,int[]size ) throws IOException{
 		double[][] mag = new double[size[0]][size[1]];
 		int[][] outmag = new int[size[0]][size[1]];
@@ -33,7 +32,6 @@ public class Sobel {
 		}
 		return  new CheckRange().Processor(outmag); 
 	}
-	
 	private int[][] dir(double[][] gx,double[][] gy,int[]size) throws IOException{	
 		double[][] dir = new double[size[0]][size[1]];
 		int[][] outdir = new int[size[0]][size[1]];
