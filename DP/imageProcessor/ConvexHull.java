@@ -9,72 +9,72 @@ import java.util.Vector;
 public class ConvexHull {
 	double seconds;
 	public List<Vertex> convexHull(List<Vertex> vertices){
-		List<Vertex> polygon = new Vector<Vertex>();		 
+		List<Vertex> polygon= new Vector<Vertex>();		 
 		int sx,lx; 
 		Vertex vcurr = null; 
 		Vertex vnext = null; 
 		int i,x;
-		lx = vertices.get(0).x;
-		sx = vertices.get(0).x;
-		for(i=1;i<vertices.size();i++) {
+		lx= vertices.get(0).x;
+		sx= vertices.get(0).x;
+		for(i= 1; i< vertices.size(); i++) {
 			x = vertices.get(i).x;
-			if(x>lx) lx = x;
-			if(x<sx) sx = x;
+			if(x>lx) lx= x;
+			if(x<sx) sx= x;
 		}
 		for(Vertex v : vertices) {
-			if(v.x==sx && (vcurr==null || v.y>vcurr.y)) {
-				vcurr = v;
+			if(v.x== sx && (vcurr== null || v.y> vcurr.y)) {
+				vcurr= v;
 			}
 		}  
-		int dxs,dys; 
-		int dxc,dyc; 
-		int dxt,dyt; 
-		int lqc,lqt; 
+		int dxs, dys; 
+		int dxc, dyc; 
+		int dxt, dyt; 
+		int lqc, lqt; 
 		int scmp;  
 		polygon.add(vcurr);
-		dys = 1; dxs = 0;
-		while(vcurr.x<=lx) {
+		dys= 1; dxs= 0;
+		while(vcurr.x<= lx) {
 			dyc = -1; dxc = 0; lqc = 0;
-			for(Vertex v : vertices) {
-				if(v.x>=vcurr.x) {
-					dyt = v.y - vcurr.y;
-					dxt = v.x - vcurr.x;
-					if(compareSlope(dyt,dxt,dys,dxs)==-1) {
-						scmp = compareSlope(dyt,dxt,dyc,dxc);
-						lqt  = dyt*dyt+dxt*dxt;
-						if(scmp>=0) {
-							if(scmp>0 || lqt>lqc) {
-								vnext = v;
-								dyc = dyt;
-								dxc = dxt;
-								lqc = lqt;
+			for(Vertex v: vertices) {
+				if(v.x>= vcurr.x) {
+					dyt= v.y- vcurr.y;
+					dxt= v.x- vcurr.x;
+					if(compareSlope(dyt,dxt,dys,dxs)== -1) {
+						scmp= compareSlope(dyt, dxt, dyc, dxc);
+						lqt= dyt* dyt+ dxt* dxt;
+						if(scmp>= 0) {
+							if(scmp> 0 || lqt> lqc) {
+								vnext= v;
+								dyc= dyt;
+								dxc= dxt;
+								lqc= lqt;
 							}
 						}
 					}
 				}
 			}
-			if(vnext==null) {break;}
-			dys = dyc; dxs = dxc;
+			if(vnext== null) {break;}
+			dys= dyc; dxs= dxc;
 			polygon.add(vnext);
 			vertices.remove(vnext);
 			vcurr = vnext; vnext = null;
 		}
 		dys = 1; dxs = 0;
-		while(vcurr.x>sx) {
-			dyc=-1; dxc = 0; lqc = 0;
-			for(Vertex v : vertices) {
+		while(vcurr.x> sx) {
+			dyc= -1; dxc= 0; lqc= 0;
+			for(Vertex v: vertices) {
 				if(v.x<vcurr.x) {
-					dyt = v.y - vcurr.y;
-					dxt = v.x - vcurr.x;
-					if(compareSlope(dyt,dxt,dys,dxs)==-1) {
-						scmp = compareSlope(dyt,dxt,dyc,dxc);
-						lqt  = dyt*dyt+dxt*dxt;
-						if(scmp>=0) {
-							if(scmp>0 || lqt>lqc) {
-								vnext = v;
-								dyc = dyt;
-								dxc = dxt;
-								lqc = lqt;
+					dyt= v.y- vcurr.y;
+					dxt= v.x- vcurr.x;
+					if(compareSlope(dyt,dxt,dys,dxs)== -1) {
+						scmp= compareSlope(dyt, dxt, dyc, dxc);
+						lqt= dyt*dyt+dxt*dxt;
+						if(scmp>= 0) {
+							if(scmp> 0|| lqt> lqc) {
+								vnext= v;
+								dyc= dyt;
+								dxc= dxt;
+								lqc= lqt;
 							}
 						}
 					}
