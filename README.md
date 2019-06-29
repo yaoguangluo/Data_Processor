@@ -43,14 +43,13 @@ https://github.com/yaoguangluo/Data_Processor/blob/master/DP/DNAProcessor/LIFE.j
 
 #### 影视音乐项目实例
 
-#####  https://v.youku.com/v_show/id_XNDI0ODU2Njc4OA==.html?spm=a2h0j.11185381.listitem_page1.5~A
+#####  refer：https://v.youku.com/v_show/id_XNDI0ODU2Njc4OA==.html?spm=a2h0j.11185381.listitem_page1.5~A
 ######  《On the Rain of Qingming Festival》小调 变奏 改 练习曲
-######  Refer：
 ######  Author: Song Xu
+######  Soloist: Yaoguang Luo
 
 #####  refer：https://v.youku.com/v_show/id_XNDI0NjkzMjIzNg==.html?spm=a2h0k.11417342.soresults.dtitle
 ######  《Kiss The Rain》 小调变奏练习曲
-######  Refer
 ######  Author: Yiruma
 ######  Soloist: Yaoguang Luo
 
