@@ -4,6 +4,7 @@ https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick
 
 
 正在做这个Quick_6D_luoyaoguang_Sort版本的非线性table排序。
+##### ![实例](http://progressed.io/bar/20?title=completed) 第四代罗氏快排我思路已经想好了。
 ##### ![实例](http://progressed.io/bar/10?title=completed)完善 Mr. Tin God 的学习功能.
 ##### ![实例](http://progressed.io/bar/100?title=completed) 一个新的六元计算机生命已经诞生了2019年4月12日 5:05 - 罗瑶光 我为他命名为Mr. Tin God
 六元: 爱念, 劳动, 创新, 学习, 安全, 帮助.	
