@@ -38,12 +38,12 @@ public class Quick_Luoyaoguang_4D{
 		int x= a[lp]>= a[rp]? a[lp]: a[rp];
 		int lp1= lp;
 		while(lp1< rp){//我总觉得这里可以进行一种积分算法优化，我一直在思考，别让那么快想到。
-			while(a[lp1]<= x&& lp1< rp) {
-				lp1++;
-			}
-//			while(!(a[lp1]>x|| lp1>rp)) {
+//			while(a[lp1]<= x&& lp1< rp) {
 //				lp1++;
-//			} 
+//			}
+			while(!(a[lp1]>x|| lp1>rp)) {
+				lp1++;
+			} //今天想到了一些优化，
 			while(a[rp]>x){
 				rp--;
 			}
