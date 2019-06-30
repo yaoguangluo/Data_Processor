@@ -11,8 +11,8 @@ public class ConvexHull {
 	public List<Vertex> convexHull(List<Vertex> vertices){
 		List<Vertex> polygon= new Vector<Vertex>();		 
 		int sx,lx; 
-		Vertex vcurr = null; 
-		Vertex vnext = null; 
+		Vertex vcurr= null; 
+		Vertex vnext= null; 
 		int i,x;
 		lx= vertices.get(0).x;
 		sx= vertices.get(0).x;

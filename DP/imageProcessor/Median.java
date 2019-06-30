@@ -5,29 +5,29 @@ public class Median {
 	public int[][] Processor(int[][] g,int d,int e) throws IOException {
 		int[][] refG =  new Reflection().PadImage(g, d, e);  
 		int[] neib=new int[d*e];//for sort
-		for(int i=d/2;i<g.length+d/2;i++){
-			for(int j=e/2;j<g[0].length+e/2;j++) {   
-				int q=0;
-				for(int k=0;k<d;k++) {
-					for(int l=0;l<e;l++) {
+		for(int i= d/2;i< g.length+ d/ 2; i++){
+			for(int j= e/ 2; j< g[0].length+ e/ 2; j++) {   
+				int q= 0;
+				for(int k= 0; k< d; k++) {
+					for(int l= 0; l< e; l++) {
 						//find 3*3
-						neib[q++]=refG[i+k-d/2][j+l-e/2];
+						neib[q++]= refG[i+ k- d/ 2][j+ l- e/ 2];
 						//sort 3*3 bbsort
 					}}
-				for(int o=0;o<9;o++) {
-					for(int p=0;p<9;p++){ 
-						if (neib[o] > neib[p]) {
-							int temp = neib[o];  
-							neib[o] = neib[p];  
-							neib[p] = temp;  
+				for(int o= 0; o<9; o++) {
+					for(int p= 0; p< 9; p++){ 
+						if (neib[o]> neib[p]) {
+							int temp= neib[o];  
+							neib[o]= neib[p];  
+							neib[p]= temp;  
 						}  
 					}
 				}
 				//get median
-				g[i-d/2][j-e/2]=neib[(d*e)/2];// 4 is middle valueof sort 9  
+				g[i- d/ 2][j- e/ 2]= neib[(d* e)/ 2];// 4 is middle valueof sort 9  
 			}
 		}
-		return  new CheckRange().Processor(g); 	  
+		return new CheckRange().Processor(g); 	  
 	}
 
 	public BufferedImage Processor(BufferedImage lygimage, int d, int e) throws IOException {

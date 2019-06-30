@@ -2,107 +2,102 @@ package imageProcessor;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 public class Guassian {
-	public int[][] Processor2D(int[][] g,int d,int e,double sig) throws IOException {
-		int [][]flac_grn=new Reflection().PadImage(g, d, e); 
-		double kenel[][] = new double[d][e];
+	public int[][] Processor2D(int[][] g, int d, int e, double sig) throws IOException {
+		int[][] flac_grn= new Reflection().PadImage(g, d, e); 
+		double kenel[][]= new double[d][e];
 		//GAUSSIAN KENEL
-		double sumhere = 0;
-		double t = 0;
-		for(int k = 0; k<d; ++k){
-			for(int l = 0; l<e; ++l){    	    
-				t = (Math.pow(k-(d/2), 2)+Math.pow(l-(e/2), 2))/(2*Math.pow(sig, 2));
-				t = Math.exp(-t); 
-				t = (1*t)/(2*Math.PI*Math.pow(sig, 2));
-				kenel[k][l] = t;
-				sumhere = sumhere + kenel[k][l];
+		double sumhere= 0;
+		double t= 0;
+		for(int k= 0; k<d; ++k){
+			for(int l= 0; l<e; ++l){    	    
+				t= (Math.pow(k-(d/2), 2)+Math.pow(l-(e/2), 2))/(2*Math.pow(sig, 2));
+				t= Math.exp(-t); 
+				t= (1*t)/(2*Math.PI*Math.pow(sig, 2));
+				kenel[k][l]= t;
+				sumhere= sumhere+ kenel[k][l];
 			}	 
 		}
-		System.out.println("--->"+sumhere);    	
+		System.out.println("--->"+ sumhere);    	
 		//--normalization      
-		double sum1=0;
+		double sum1= 0;
 		for(int i=0; i<d; ++i){
 			for(int j=0; j<e; ++j){
-				kenel[i][j] = kenel[i][j]/sumhere;
-				sum1 = sum1 + kenel[i][j];
+				kenel[i][j]= kenel[i][j]/ sumhere;
+				sum1= sum1+ kenel[i][j];
 			}
 		}
 		//--end of producing gaussian matrix
 		System.out.println("gaussian sum: " + sum1);
 		//GAUSSIAN pro
 		//int[][] neib=new int[15][15];//for sort
-		for (int i=d/2;i<g.length+d/2;i++){
-			for(int j=e/2;j<g[0].length+e/2;j++){
-				double sum=0;
-				for(int k=0;k<d;k++){
-					for(int l=0;l<e;l++){
-						sum=(float)(sum+flac_grn[i+k-d/2][j+l-e/2]*kenel[k][l]);	
+		for (int i= d/2;i< g.length+d/2; i++){
+			for(int j= e/2;j< g[0].length+ e/2; j++){
+				double sum= 0;
+				for(int k=0; k<d; k++){
+					for(int l=0; l<e; l++){
+						sum= (float)(sum+ flac_grn[i+ k- d/ 2][j+ l- e/ 2]* kenel[k][l]);	
 					}
 				}
 				// System.out.println(sum);
-				g[i-d/2][j-e/2]=(int)(sum);	
+				g[i- d/2][j- e/2]= (int)(sum);	
 			}
-		}  	
-
+		}
 		return  new CheckRange().Processor(g); 		  
 	}
 	public int[][] Processor1D(int[][] g,int d,int e,double sig) throws IOException {
-		int [][]flac_grn=new Reflection().PadImage(g, d, e); 
+		int [][]flac_grn= new Reflection().PadImage(g, d, e); 
 		double kenel[][] = new double[d][e];
 		//GAUSSIAN KENEL
-		double sumrow = 0;
-		double sumcol = 0;
-		double t = 0;
-		for(int k = 0; k<d; ++k){
-			for(int l = e/2; l<e/2+1; ++l){    	    
-				t = (Math.pow(k-d/2, 2)+Math.pow(l-e/2, 2))/(2*Math.pow(sig, 2));
-				t = Math.exp(-t); 
-				t = (1*t)/(2*Math.PI*Math.pow(sig, 2));
-				kenel[k][l] = t;
-				sumrow = sumrow + kenel[k][l];
+		double sumrow= 0;
+		double sumcol= 0;
+		double t= 0;
+		for(int k= 0; k<d; ++k){
+			for(int l= e/ 2; l< e/ 2+ 1; ++l){    	    
+				t= (Math.pow(k- d/2, 2)+ Math.pow(l- e/2, 2))/(2* Math.pow(sig, 2));
+				t= Math.exp(-t); 
+				t= (1*t)/(2*Math.PI*Math.pow(sig, 2));
+				kenel[k][l]= t;
+				sumrow= sumrow+ kenel[k][l];
 			}	 
 		}
-		System.out.println("--->"+sumrow);    
+		System.out.println("--->"+ sumrow);    
 		//--normalization row      
-		double sum1=0;
-		for(int i=0; i<d; ++i){
-			for(int j=e/2; j<e/2+1; ++j){
-				kenel[i][j] = kenel[i][j]/sumrow;
-				sum1 = sum1 + kenel[i][j];
+		double sum1= 0;
+		for(int i= 0; i<d; ++i){
+			for(int j= e/2; j< e/2+1; ++j){
+				kenel[i][j]= kenel[i][j]/ sumrow;
+				sum1= sum1+ kenel[i][j];
 			}
 		}
 		//--end of producing gaussian matrix
 		System.out.println("gaussian sum: " + sum1);
 		////GAUSSIAN KENEL col
-		for(int k = d/2; k<d/2+1; ++k){
-			for(int l = 0; l<e; ++l){    	    
-				t = (Math.pow(k-d/2, 2)+Math.pow(l-e/2, 2))/(2*Math.pow(sig, 2));
-				t = Math.exp(-t); 
-				t = (1*t)/(2*Math.PI*Math.pow(sig, 2));
-				kenel[k][l] = t;
-				sumcol = sumcol + kenel[k][l];
+		for(int k= d/2; k<d/2+1; ++k){
+			for(int l= 0; l<e; ++l){    	    
+				t= (Math.pow(k-d/2, 2)+Math.pow(l-e/2, 2))/(2*Math.pow(sig, 2));
+				t= Math.exp(-t); 
+				t= (1* t)/ (2* Math.PI*Math.pow(sig, 2));
+				kenel[k][l]= t;
+				sumcol= sumcol+ kenel[k][l];
 			}	 
 		}
 		System.out.println("--->"+sumcol);
 		//--normalization col      
-		double sum2=0;
-		for(int i=d/2; i<d/2+1; ++i){
+		double sum2= 0;
+		for(int i= d/ 2; i< d/ 2+ 1; ++i){
 			for(int j=0; j<e; ++j){
-				kenel[i][j] = kenel[i][j]/sumcol;
-				sum2 = sum2 + kenel[i][j];
+				kenel[i][j]= kenel[i][j]/ sumcol;
+				sum2= sum2+ kenel[i][j];
 			}
 		}
 		//--end of producing gaussian matrix
 		System.out.println("gaussian sum: " + sum2);	    	
 		//GAUSSIAN pro for row
-		for (int i=d/2;i<g.length+d/2;i++)
-		{
-			for(int j=e/2;j<g[0].length+e/2;j++)
-			{
+		for (int i=d/2;i<g.length+d/2;i++){
+			for(int j=e/2;j<g[0].length+e/2;j++){
 				double sum=0;
-				for(int k=0;k<d;k++)
-				{
-					for(int l=e/2;l<e/2+1;l++)
-					{
+				for(int k=0;k<d;k++){
+					for(int l=e/2;l<e/2+1;l++){
 						sum=(float)(sum+flac_grn[i+k-d/2][j+l-e/2]*kenel[k][l]);	
 					}
 				}
