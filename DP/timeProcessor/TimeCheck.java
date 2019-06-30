@@ -8,8 +8,7 @@ public class TimeCheck{
 		before = System.currentTimeMillis();
 	}
 	
-	public void end()
-	{
+	public void end(){
 		now = System.currentTimeMillis();
 	}
 	

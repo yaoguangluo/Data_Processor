@@ -68,21 +68,21 @@ public class BreadthRun extends Thread{
 					}
 				}
 				head.value.sort=1;
-				if(head.value.O1!=null&&head.value.O1.sort==0)
+				if(head.value.O1!=null&&head.value.O1.sort== 0)
 					push(head.value.O1);	
-				if(head.value.O2!=null&&head.value.O2.sort==0)
+				if(head.value.O2!=null&&head.value.O2.sort== 0)
 					push(head.value.O2);
-				if(head.value.O3!=null&&head.value.O3.sort==0)
+				if(head.value.O3!=null&&head.value.O3.sort== 0)
 					push(head.value.O3);
-				if(head.value.O4!=null&&head.value.O4.sort==0)
+				if(head.value.O4!=null&&head.value.O4.sort== 0)
 					push(head.value.O4);
-				if(head.value.O5!=null&&head.value.O5.sort==0)
+				if(head.value.O5!=null&&head.value.O5.sort== 0)
 					push(head.value.O5);
-				if(head.value.O6!=null&&head.value.O6.sort==0)
+				if(head.value.O6!=null&&head.value.O6.sort== 0)
 					push(head.value.O6);	
-				if(head.value.O7!=null&&head.value.O7.sort==0)
+				if(head.value.O7!=null&&head.value.O7.sort== 0)
 					push(head.value.O7);
-				if(head.value.O8!=null&&head.value.O8.sort==0)
+				if(head.value.O8!=null&&head.value.O8.sort== 0)
 					push(head.value.O8);	
 			}
 		}
