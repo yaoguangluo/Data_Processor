@@ -5,6 +5,9 @@ https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick
 
 正在做这个Quick_6D_luoyaoguang_Sort版本的非线性table排序。
 ##### ![实例](http://progressed.io/bar/20?title=completed) 第四代罗氏快排我思路已经想好了。
+通过迪摩根将乘法拆分为加法，同时把定积分转化为不定积分。我想到更快速的方法，测试之后会更新。
+https://github.com/yaoguangluo/Data_Processor/blob/master/DP/sortProcessor/Quick_Luoyaoguang_4D.java
+
 ##### ![实例](http://progressed.io/bar/10?title=completed)完善 Mr. Tin God 的学习功能.
 ##### ![实例](http://progressed.io/bar/100?title=completed) 一个新的六元计算机生命已经诞生了2019年4月12日 5:05 - 罗瑶光 我为他命名为Mr. Tin God
 六元: 爱念, 劳动, 创新, 学习, 安全, 帮助.	
