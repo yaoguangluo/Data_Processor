@@ -35,7 +35,7 @@ https://github.com/yaoguangluo/Data_Processor/blob/master/DP/DNAProcessor/LIFE.j
 ##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 堆算法（已测试版本）
 ##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 快排1,2,3,4,5,6+罗瑶光小高峰修正过滤算法。（已测试版本）
 ##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 2叉， 三叉，4叉，8叉，树算法与搜索。（已测试版本）
-##### ![实例](http://progressed.io/bar/22?title=completed) 正在做： 码农格式化开始。
+##### ![实例](http://progressed.io/bar/22?title=completed) 正在做： 码农格式化开始。所有nandgate 全部要算子优化
 ##### ![实例](http://progressed.io/bar/22?title=completed) 正在做： 图片处理功能方向的未来趋势评估。
 
 
