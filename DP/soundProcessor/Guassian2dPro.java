@@ -11,7 +11,7 @@ import movieProcessor.LYGFileIO;
 public class Guassian2dPro{
 	Vector<Double> lines= new Vector<Double>();
 	byte[] audioBytes;
-	public double []guassian;
+	public double[] guassian;
 	AudioFormat af;
 	AudioInputStream ais;
 	@SuppressWarnings("rawtypes")
@@ -30,47 +30,39 @@ public class Guassian2dPro{
 				return null; 
 			}
 		}
-		Dimension d = new Dimension(800,600);
-		int w = d.width;
-		int h = d.height-15;
-		int[] audioData = null;
-		if (af.getSampleSizeInBits() == 16) {
-			int nlengthInSamples = audioBytes.length / 2;
+		Dimension d = new Dimension(800, 600);
+		int w= d.width;
+		int h= d.height- 15;
+		int[] audioData= null;
+		if (af.getSampleSizeInBits()== 16) {
+			int nlengthInSamples= audioBytes.length / 2;
 			audioData = new int[nlengthInSamples];
-			if (af.isBigEndian()) 
-			{
-				for (int i = 0; i < nlengthInSamples; i++) 
-				{
+			if (af.isBigEndian()) {
+				for (int i= 0; i< nlengthInSamples; i++) {
 					/* First byte is MSB (high order) */
-					int MSB = (int) audioBytes[2*i];
+					int MSB= (int) audioBytes[2*i];
 					/* Second byte is LSB (low order) */
-					int LSB = (int) audioBytes[2*i+1];
-					audioData[i] = MSB << 8 | (255 & LSB);
+					int LSB= (int) audioBytes[2*i+1];
+					audioData[i]= MSB<< 8 | (255& LSB);
 				}
-			} else 
-			{
-				for (int i = 0; i < nlengthInSamples; i++) 
-				{
+			} else {
+				for (int i= 0; i< nlengthInSamples; i++) {
 					/* First byte is LSB (low order) */
-					int LSB = (int) audioBytes[2*i];
+					int LSB= (int) audioBytes[2*i];
 					/* Second byte is MSB (high order) */
-					int MSB = (int) audioBytes[2*i+1];
-					audioData[i] = MSB << 8 | (255 & LSB);
+					int MSB= (int) audioBytes[2*i+1];
+					audioData[i]= MSB<< 8| (255& LSB);
 				}
 			}
-		} else if (af.getSampleSizeInBits() == 8)  {
-			int nlengthInSamples = audioBytes.length;
-			audioData = new int[nlengthInSamples];
-			if (af.getEncoding().toString().startsWith("PCM_SIGN")) 
-			{
-				for (int i = 0; i < audioBytes.length; i++) 
-				{
+		} else if (af.getSampleSizeInBits()== 8)  {
+			int nlengthInSamples= audioBytes.length;
+			audioData= new int[nlengthInSamples];
+			if(af.getEncoding().toString().startsWith("PCM_SIGN")) {
+				for (int i = 0; i < audioBytes.length; i++) {
 					audioData[i] = audioBytes[i];
 				}
-			} else 
-			{
-				for (int i = 0; i < audioBytes.length; i++) 
-				{
+			} else {
+				for (int i = 0; i < audioBytes.length; i++) {
 					audioData[i] = audioBytes[i] - 128;
 				}
 			}
@@ -131,11 +123,9 @@ public class Guassian2dPro{
 	@SuppressWarnings("rawtypes")
 	public Vector getVectorLines(LYGFileIO toplygin) {
 		toplygin.init();	 
-		if(toplygin.adataFrame!=null)
-		{
+		if(toplygin.adataFrame!=null){
 			this.getVectorLines(toplygin.adataFrame.audioIS);
-			while(toplygin.adataFrame.next!=null)
-			{
+			while(toplygin.adataFrame.next!=null){
 				toplygin.adataFrame=toplygin.adataFrame.next;
 				this.getVectorLines(toplygin.adataFrame.audioIS);
 			}

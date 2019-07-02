@@ -43,8 +43,7 @@ public class ButterworthPro{
 					audioData[i] = MSB << 8 | (255 & LSB);
 				}
 			} else {
-				for (int i = 0; i < nlengthInSamples; i++) 
-				{
+				for (int i = 0; i < nlengthInSamples; i++) {
 					/* First byte is LSB (low order) */
 					int LSB = (int) audioBytes[2*i];
 					/* Second byte is MSB (high order) */
