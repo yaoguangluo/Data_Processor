@@ -41,7 +41,7 @@ public class Quick_Luoyaoguang_4D{
 //			while(a[lp1]<= x&& lp1< rp) {
 //				lp1++;
 //			}
-			while(!(a[lp1]>x|| lp1>rp)) {
+			while(!(a[lp1]>x|| lp1>=rp)) {
 				lp1++;
 			} //今天想到了一些优化，
 			while(a[rp]>x){
