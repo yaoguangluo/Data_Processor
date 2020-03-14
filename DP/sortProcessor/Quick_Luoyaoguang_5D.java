@@ -4,15 +4,15 @@ import timeProcessor.TimeCheck;
 //同频函数减少
 //同频算子减少
 //同频变量减少
-public class Quick_Luoyaoguang_4D{
+public class Quick_Luoyaoguang_5D{
 	public int[] sort(int[] a) {
-		quick2ds(a, 0, a.length-1);
+		quick2ds(a, 0, a.length-1, 0);
 		return a;
 	}
 
-	private void quick2ds(int[] a, int lp, int rp) {
+	private void quick2ds(int[] a, int lp, int rp, int d) {
 		if(lp< rp){
-			int c = rp - lp; if(c < 7){ int j;
+			int c = rp - lp; if(!(c > 7|| d>80)){ int j;
 			for(int i = 1 + lp; i <= lp + c; i++){
 				j = i;while(j>=1+lp){
 					if(a[j]<a[j-1]){
@@ -24,8 +24,8 @@ public class Quick_Luoyaoguang_4D{
 			return;
 			}
 			int pos = partition(a, lp, rp);
-			quick2ds(a, lp, pos-1);
-			quick2ds(a, pos+1, rp);
+			quick2ds(a, lp, pos-1, d+1);
+			quick2ds(a, pos+1, rp, d+1);
 		}
 	}
 

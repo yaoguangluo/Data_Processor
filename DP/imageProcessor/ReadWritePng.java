@@ -8,7 +8,8 @@ public class ReadWritePng {
 	public int h;
 	public int w;
 	public void writePNG(String args, int[][] outmag) throws IOException{
-		BufferedImage image= new BufferedImage(outmag[0].length, outmag.length, BufferedImage.TYPE_INT_RGB);
+		BufferedImage image= new BufferedImage(outmag[0].length, outmag.length
+				, BufferedImage.TYPE_INT_RGB);
 		for (int i= 0; i< image.getHeight(); ++i) {
 			for (int j= 0; j< image.getWidth(); ++j) {
 				int val= (int) outmag[i][j];

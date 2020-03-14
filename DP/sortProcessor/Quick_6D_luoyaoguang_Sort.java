@@ -38,7 +38,7 @@ public class Quick_6D_luoyaoguang_Sort{
 			x=a[rp];
 		}
 		while(lp1<rp){
-			while(a[lp1]<=x &&lp1<rp ) {
+			while(a[lp1]<=x &&lp1<rp) {
 				lp1++;
 			}
 			while(a[rp]>x){
